@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>The Money Manager</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-right"><br>
+      <img src="images/Logosm.jpg" alt="my logo"><a name="top"></a>
+      <h2><em>Watch your Balance!</em></h2><br><br>
+      <div class="header">
+        <a class="active" id="home">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <div>
+          <br><br><br>
+          <h1>The Money Manager</h1><br><br>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <p id="date"></p><br>
+    <h4>Your Balance</h4>
+    <h1 id="balance">00.00 ₪</h1>
+
+    <div class="inc-exp-container">
+      <div>
+        <h4>Income</h4>
+        <p id="money-plus" class="money plus">+00.00 ₪</p>
+      </div>
+
+      <div>
+        <h4>Expense</h4>
+        <p id="money-minus" class="money minus">-00.00 ₪</p>
+      </div>
+    </div>
+    <h3>Transaction List</h3>
+    <ul id="list" class="list">
+
+    </ul>
+
+    <h3>Add new transaction</h3>
+    <form id="form">
+      <div class="form-control">
+        <label for="text">Item</label>
+        <input type="text" id="text" placeholder="Enter item..." />
+      </div>
+
+
+      <div class="form-control">
+        <label for="amount">Amount<br>
+          <small>(negative - expense (-), positive - income)</small></label>
+        <input type="number" id="amount" step="0.01" placeholder="Enter amount..." />
+      </div><br>
+      <button class="btn">Add transaction</button>
+    </form>
+    <br><br>
+
+    <h5><a href="#top">Back to Top</a></h5>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
