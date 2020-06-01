@@ -7,12 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="normalize.css">
   <title>The Money Manager</title>
 </head>
 
 <body>
   <header>
-    <div class="header-right"><br>
+    <div class="header-right">
       <img src="images/Logosm.jpg" alt="my logo"><a name="top"></a>
       <h2><em>Watch your Balance!</em></h2><br><br>
       <div class="header">
@@ -58,7 +59,7 @@
 
       <div class="form-control">
         <label for="amount">Amount<br>
-          <small>(negative - expense (-), positive - income)</small></label>
+          <small>(negative : expense (-), positive : income)</small></label>
         <input type="number" id="amount" step="0.01" placeholder="Enter amount..." />
       </div><br>
       <button class="btn">Add transaction</button>
