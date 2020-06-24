@@ -14,7 +14,7 @@ n = new Date(); y =
 
 document.getElementById('date').innerHTML = d + "/" + m + "/" + y;
 
-
+//JSON parse string to an array
 const localStorageTransactions = JSON.parse(
   localStorage.getItem('transactions')
 );
@@ -120,3 +120,4 @@ function init() {
 init();
 
 form.addEventListener('submit', addTransaction);
+//the submit event initialises the application
