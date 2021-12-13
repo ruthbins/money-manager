@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oxanium&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Oxanium&display=swap");
 /* Custom styles*/
 :root {
   --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -10,39 +10,38 @@
 
 body {
   background-image: url(images/astronomy.jpg);
-  background-color: #c9c1f3;      /*Instead of the background image*/
+  background-color: #c9c1f3; /*Instead of the background image*/
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;   /* % of viewport height*/
+  min-height: 100vh; /* % of viewport height*/
   margin: 10px;
   padding: 10px 0;
-  font-family: 'Oxanium', cursive;
+  font-family: "Oxanium", cursive;
   color: #4d30f1;
 }
 
-.logo{
+.logo {
   margin-left: 10px;
   padding-left: 10px;
   opacity: 0.75;
 }
-@media screen and (max-width: 600px, 1000px) {
-
-.header-right {
-  float: none;
+@media screen and (max-width: 600px) or (max-width: 1000px) {
+  .header-right {
+    float: none;
   }
 }
 
 .header {
-  overflow: hidden;   /*no scrollbars, extra content hidden*/
+  overflow: hidden; /*no scrollbars, extra content hidden*/
   background-color: #f1f1f1;
   padding: 14px;
   margin: 0 10px;
   text-align: center;
 }
 
-.header a{
+.header a {
   float: none;
   color: #4d30f1;
   text-align: center;
@@ -119,11 +118,12 @@ h5 {
 }
 
 .inc-exp-container > div {
-  flex: 1;                                /* flex-grow in proportion*/
+  flex: 1; /* flex-grow in proportion*/
   text-align: center;
 }
 
-.inc-exp-container > div:first-of-type {   /*directive for child*/
+.inc-exp-container > div:first-of-type {
+  /*directive for child*/
   border-right: 1px solid #dedede;
 }
 
@@ -147,8 +147,8 @@ label {
   color: #4d30f1;
 }
 
-input[type='text'],
-input[type='number'] {
+input[type="text"],
+input[type="number"] {
   border: 1px solid #dedede;
   border-radius: 2px;
   display: block;
@@ -164,7 +164,7 @@ input[type='number'] {
   color: #fff;
   border: 0;
   display: block;
-  font-family: 'Oxanium', cursive;
+  font-family: "Oxanium", cursive;
   font-size: 16px;
   margin: 10px 0 30px;
   padding: 10px;
@@ -226,7 +226,7 @@ a {
   font-weight: lighter;
 }
 
-.info{
+.info {
   background-color: #9c88ff;
   box-shadow: var (--box-shadow);
   color: #fff;
@@ -239,18 +239,18 @@ a {
   width: 30%;
 }
 
-input[type=textarea] {
+input[type="textarea"] {
   border: 1px groove #4d30f1;
   width: 300px;
-  height: 50px;  
-  }
+  height: 50px;
+}
 section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  }
+}
 
-input[type=submit] {
+input[type="submit"] {
   width: 60%;
   background-color: #9c88ff;
   color: white;
@@ -261,11 +261,11 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #4d30f1;
 }
 
-input[type=reset] {
+input[type="reset"] {
   width: 60%;
   background-color: #9c88ff;
   color: white;
@@ -276,8 +276,7 @@ input[type=reset] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover,
+input[type="reset"]:hover {
   background-color: #4d30f1;
 }
-
-
